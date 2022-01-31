@@ -43,9 +43,10 @@ body {
 }
 .mylo {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   font-style: normal;
+  
   
   
 }
@@ -53,14 +54,25 @@ body {
   color: var(--title-text-color);
   text-decoration: none;
 }
+.mylo:hover,
+.mylo:focus,
 .link:hover,
 .link:focus{
+  color: var(--accent-color);
+}
+.linki{
+  color: var(--fone-color-cotrast);
+  text-decoration: none;
+}
+
+.linki:hover,
+.linki:focus{
   color: var(--accent-color);
 }
 .hero {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   /* or 136% */
   text-align: center;
   letter-spacing: 0.06em;
@@ -75,13 +87,16 @@ body {
   color: var(--primary-white-color);
   border: none;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
 }
 .presi{
   background: var(--no-primary-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.63;
+  font-weight: 500;
   /* identical to box height, or 162% */
   text-align: center;
   letter-spacing: 0.03em;
@@ -89,21 +104,28 @@ body {
   border: none;
   cursor: pointer;
 }
+
+.presi:hover,
+.presi:focus{
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
 /* Main */
 
 }
+
 .advantage {
+  text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
-
   color: var(--title-text-color);
 }
 .advantages {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   /* or 171% */
   letter-spacing: 0.03em;
   color: var(--fone-color-cotrast);
@@ -113,7 +135,7 @@ body {
   
   font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
@@ -122,7 +144,7 @@ body {
   background-color: var(--fone-color)
 }
 .color-ectiv{
-  background-color: var(--fone-color)
+  background-color: var(--primary-white-color)
 }
 .color-team{
   background-color: var(--no-primary-color);
@@ -130,8 +152,8 @@ body {
 }
 .name {
   
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 1.05;
   /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
@@ -140,7 +162,7 @@ body {
 .prof {
   
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
@@ -157,7 +179,7 @@ body {
 font-family: Raleway;
 font-weight: bold;
 font-size: 26px;
-line-height: 31px;
+line-height: 1.19;
 /* identical to box height */
 letter-spacing: 0.03em;
 color: var(--primary-white-color);
@@ -166,7 +188,7 @@ text-decoration: none;
 }
 .contact{
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
 /* or 171% */
 letter-spacing: 0.03em;
   color: var(--contact-color);
