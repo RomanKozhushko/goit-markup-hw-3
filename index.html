@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initiale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/flexi.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,12 +22,12 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a class="logoh" href="./index.html">
-          <span class="logos">Web</span>Studio
-        </a>
-        <ul class="mylo un-point">
+    <header class="container header-box">
+      <a class="logoh" href="./index.html">
+        <span class="logos">Web</span>Studio
+      </a>
+      <nav class="navi">
+        <ul class="navis un-point">
           <li><a href="./index.html" class="link">Студия</a></li>
           <li><a href="./portfolio.html" class="link">Портфолио</a></li>
           <li><a href="" class="link">Контакты</a></li>
@@ -36,7 +36,7 @@
 
       <ul class="mylo un-point">
         <li>
-          <a href="mailto:info@devstudio.com" class="linki"
+          <a href="mailto:info@devstudio.com" class="linki mail"
             >info@devstudio.com</a
           >
         </li>
@@ -46,38 +46,41 @@
       </ul>
     </header>
 
-    <div>
-      <section>
-        <h1 class="hero">Эффективные решения для вашего бизнеса</h1>
-        <button class="pres" type="button">Заказать услугу</button>
-      </section>
-    </div>
+    <section class="box-hero">
+      <h1 class="hero">
+        Эффективные решения <br />
+        для вашего бизнеса
+      </h1>
+      <button class="pres" type="button">Заказать услугу</button>
+    </section>
+
     <main>
       <section>
         <!-- <h2> -->
-        <ul class="un-point">
-          <li>
+
+        <ul class="box-advantage container un-point">
+          <li class="advant">
             <h3 class="advantage">Внимание к деталям</h3>
             <p class="advantages">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="advant">
             <h3 class="advantage">Пунктуальность</h3>
             <p class="advantages">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="advant">
             <h3 class="advantage">Планирование</h3>
             <p class="advantages">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="advant">
             <h3 class="advantage">Современные технологии</h3>
             <p class="advantages">
               Значимость этих проблем настолько очевидна, что реализация
@@ -86,63 +89,71 @@
           </li>
         </ul>
       </section>
-      <section class="color-ectiv">
+      <section class="color-ectiv container">
         <h2 class="activis">Чем мы занимаемся</h2>
-        <ul class="un-point">
-          <li><a href=""></a> <img src="images/photo1.jpg" alt="photo1" /></li>
+        <ul class="box-activis un-point">
+          <li>
+            <a href=""></a>
+            <img src="images/photo1.jpg" alt="photo1" width="370px" />
+          </li>
           <li><a href=""></a> <img src="images/photo2.jpg" alt="photo2" /></li>
           <li><a href=""></a> <img src="images/photo3.jpg" alt="photo3" /></li>
         </ul>
       </section>
-      <section class="color-team">
+
+      <section class="color-team container">
         <h2 class="activis">Наша команда</h2>
 
-        <ul class="un-point">
-          <li>
+        <ul class="un-point container box-team">
+          <li class="man">
             <a href=""></a>
-            <img src="images/dem.jpg" alt="Игорь Демьяненко" width="260" />
+            <img src="images/dem.jpg" alt="Игорь Демьяненко" width="270" />
             <h3 class="name">Игорь Демьяненко</h3>
             <p class="prof">Product Designer</p>
           </li>
-          <li>
+          <li class="man">
             <a href=""></a>
-            <img src="images/rep.jpg" alt="Ольга Репина" width="260" />
+            <img src="images/rep.jpg" alt="Ольга Репина" width="270" />
             <h3 class="name">Ольга Репина</h3>
             <p class="prof">Frontend Developer</p>
           </li>
-          <li>
+          <li class="man">
             <a href=""></a>
-            <img src="images/tar.jpg" alt="Николай Тарасов" width="260" />
+            <img src="images/tar.jpg" alt="Николай Тарасов" width="270" />
             <h3 class="name">Николай Тарасов</h3>
             <p class="prof">Marketing</p>
           </li>
-          <li>
+          <li class="man">
             <a href=""></a>
-            <img src="images/erm.jpg" alt="Михаил Ермаков" width="260" />
+            <img src="images/erm.jpg" alt="Михаил Ермаков" width="270" />
             <h3 class="name">Михаил Ермаков</h3>
             <p class="prof">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="color-foot">
-      <a class="logof" href="./index.html">
-        <span class="logos">Web</span>Studio
-      </a>
+    <footer class="color-foot container">
+      <div class="space">
+        <a class="logof" href="./index.html">
+          <span class="logos">Web</span>Studio
+        </a>
 
-      <address class="mylo">
-        <a
-          class="colori link"
-          href="https://goo.gl/maps/RnuvEtVCAa1U8o1WA"
-          target="_blank"
-        >
-          г. Киев, пр-т Леси Украинки, 26</a
-        ><br />
-        <a href="mailto:info@devstudio.com" class="contact link"
-          >info@devstudio.com</a
-        ><br />
-        <a href="tel:+380961111111" class="contact link">+38 096 111 11 117</a>
-      </address>
+        <address class="address-foot">
+          <a
+            class="colori link"
+            href="https://goo.gl/maps/RnuvEtVCAa1U8o1WA"
+            target="_blank"
+          >
+            г. Киев, пр-т Леси Украинки, 26</a
+          ><br />
+          <a href="mailto:info@devstudio.com" class="contact link"
+            >info@devstudio.com</a
+          ><br />
+          <a href="tel:+380961111111" class="contact link"
+            >+38 096 111 11 117</a
+          >
+        </address>
+      </div>
     </footer>
   </body>
 </html>
