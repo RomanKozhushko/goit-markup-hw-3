@@ -72,6 +72,11 @@ p {
   height: 80px;
   display: flex;
   border-bottom: 1px solid #ececec;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .navis {
@@ -127,6 +132,7 @@ p {
   font-style: normal;
   margin-top: auto;
   margin-bottom: auto;
+  margin-right: 215px;
 }
 
 .logoh {
@@ -140,6 +146,7 @@ p {
   text-decoration: none;
   margin-top: auto;
   margin-bottom: auto;
+  margin-left: 215px;
 }
 .logos {
   color: var(--accent-color);
