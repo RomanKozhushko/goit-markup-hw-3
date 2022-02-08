@@ -22,11 +22,12 @@ body {
   font-family: Roboto, sans-serif;
   color: var(--title-text-color);
   font-style: normal;
-  font-weight: normal;
   font-weight: 500;
   line-height: 1.5;
 }
-
+* {
+  list-style: none;
+}
 h1,
 h2,
 h3,
@@ -54,9 +55,13 @@ p {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 1230px;
   padding-left: 30px;
   padding-right: 30px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .header-box {
@@ -167,7 +172,6 @@ p {
   padding-top: 198px;
   margin-bottom: 30px;
   margin-top: 0px;
-  margin-bottom: 30px;
 }
 .pres {
   background: var(--accent-color);
@@ -204,18 +208,16 @@ p {
 
 /* Main */
 .box-advantage {
-  display: flex;
-  height: 101px;
-  margin-top: 89px;
-  width: 1200px;
-  padding-right: 30px;
-  padding-right: 30px;
+  width: 1170px;
+  padding-bottom: 94px;
   justify-content: space-between;
+  padding-left: 0px;
+  padding-right: 0px;
 }
+
 .advant {
   width: 270px;
   height: 101px;
-  /* margin-left: 30px; */
 }
 
 /* box-advantage */
@@ -238,9 +240,8 @@ p {
 .box-activis {
   display: flex;
   justify-content: space-between;
+  width: 1170px;
   padding-left: 0px;
-  padding-right: 0px;
-  margin-top: -13px;
 }
 .activis {
   font-weight: bold;
@@ -250,6 +251,7 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-right: 0px;
 }
 .color-adventage {
   background-color: var(--fone-color);
@@ -259,8 +261,6 @@ p {
   width: 1200px;
   padding-left: 30px;
   padding-right: 30px;
-  margin-top: 94px;
-  height: 386px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -269,10 +269,8 @@ p {
   width: 1600px;
   padding-left: 30px;
   padding-right: 30px;
-  margin-top: 97px;
   margin-bottom: 0px;
   background-color: #f5f4fa;
-  height: 648px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -283,16 +281,18 @@ p {
   width: 270px;
   height: 368px;
   background-color: #ffffff;
+  text-align: center;
 }
 
 .name {
-  font-size: 18px;
-  line-height: 1.05;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.19;
   /* identical to box height */
   margin-left: 24px;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .prof {
   font-size: 16px;
@@ -301,7 +301,7 @@ p {
   margin-left: 24px;
   letter-spacing: 0.03em;
   color: var(--fone-color-cotrast);
-  margin-top: 4px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 .colori {
@@ -352,7 +352,6 @@ p {
   padding-right: 30px;
 }
 .button-box {
-  padding-top: 94px;
   list-style: none;
   width: 611px;
   height: 54px;
@@ -361,9 +360,6 @@ p {
   margin-right: auto;
   margin-bottom: 50px;
   text-align: center;
-}
-.un-point {
-  list-style: none;
 }
 .card-set {
   display: flex;
@@ -383,9 +379,39 @@ img {
   display: block;
   width: 100%;
   height: auto;
+  margin-bottom: 0px;
 }
 .card-set > .item {
   flex-basis: calc(100% / 3 - var(--card-set-margin));
   margin-left: var(--card-set-margin);
   margin-top: var(--card-set-margin);
+}
+.frame {
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  width: 370px;
+  height: 110px;
+  margin-top: 0px;
+}
+.name-project {
+  font-family: Roboto;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--no-title-text-color);
+  padding-top: 20px;
+  margin-left: 24px;
+}
+.prof-project {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--fone-color-cotrast);
+  margin-left: 24px;
+  margin-top: 4px;
 }
