@@ -326,8 +326,6 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-style: normal;
-  margin-top: auto;
-  margin-bottom: auto;
   padding-top: 20px;
 }
 .logof {
@@ -347,12 +345,12 @@ p {
   padding-top: 60px;
 }
 .contact {
+  margin-top: 9px;
   font-size: 14px;
   line-height: 1.71;
   /* or 171% */
   letter-spacing: 0.03em;
   color: var(--contact-color);
-  padding-top: 9px;
 }
 /* Portfolio-box */
 .board-portfilio {
@@ -399,7 +397,7 @@ img {
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-  width: 370px;
+  width: 368px;
   height: 110px;
   margin-top: 0px;
 }
