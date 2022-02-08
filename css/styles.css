@@ -25,6 +25,10 @@ body {
   font-weight: 500;
   line-height: 1.5;
 }
+.active-page {
+  color: var(--accent-color);
+  text-decoration: none;
+}
 * {
   list-style: none;
 }
@@ -173,6 +177,11 @@ p {
   margin-bottom: 30px;
   margin-top: 0px;
 }
+
+.pres:hover,
+.presi:focus {
+  background-color: #188ce8;
+}
 .pres {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -289,7 +298,7 @@ p {
   font-size: 16px;
   line-height: 1.19;
   /* identical to box height */
-  margin-left: 24px;
+
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-top: 30px;
@@ -298,7 +307,7 @@ p {
   font-size: 16px;
   line-height: 1.19;
   /* identical to box height */
-  margin-left: 24px;
+
   letter-spacing: 0.03em;
   color: var(--fone-color-cotrast);
   margin-top: 10px;
