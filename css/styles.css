@@ -57,8 +57,7 @@ p {
   display: flex;
 }
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   width: 1230px;
   padding-left: 30px;
   padding-right: 30px;
@@ -67,26 +66,36 @@ p {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-.header-box {
-  height: 80px;
-  display: flex;
+.header-line {
   border-bottom: 1px solid #ececec;
-  margin-left: auto;
+  width: 100%;
+  max-width: 1600px;
   margin-right: auto;
-  width: 1600px;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-left: auto;
+}
+.header-box {
+  display: flex;
+
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .navis {
   width: 294px;
   height: 16px;
   justify-content: space-between;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-style: normal;
 }
 
 .navi {
-  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 305px;
+  margin-left: 94px;
 }
 
 .mail {
@@ -99,13 +108,14 @@ p {
   list-style: none;
 }
 .box-hero {
-  width: 1600px;
-  height: 600px;
-  margin: auto;
+  width: 100%;
+  max-width: 1600px;
   background-color: #2f303a;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .pres {
@@ -120,17 +130,8 @@ p {
   padding: 10px 32px;
   min-width: 200px;
   min-height: 50px;
-  margin-left: 700px;
-  margin-right: 700px;
-  margin-bottom: 205px;
-}
-
-.navis {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  font-style: normal;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mylo {
@@ -140,7 +141,6 @@ p {
   font-style: normal;
   margin-top: auto;
   margin-bottom: auto;
-  margin-right: 215px;
 }
 
 .logoh {
@@ -154,7 +154,6 @@ p {
   text-decoration: none;
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 215px;
 }
 .logos {
   color: var(--accent-color);
@@ -188,7 +187,6 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-  padding-top: 198px;
   margin-bottom: 30px;
   margin-top: 0px;
 }
@@ -221,11 +219,20 @@ p {
 
 /* Main */
 .box-advantage {
-  width: 1170px;
   padding-bottom: 94px;
   justify-content: space-between;
-  padding-left: 0px;
-  padding-right: 0px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .advant {
@@ -264,28 +271,28 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-right: 0px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .color-adventage {
   background-color: var(--fone-color);
 }
 .color-ectiv {
   background-color: var(--primary-white-color);
-  width: 1200px;
   padding-left: 30px;
   padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
 }
 .color-team {
-  background-color: var(--primary-white-color);
-  width: 1600px;
+  width: 100%;
+  max-width: 1600px;
   padding-left: 30px;
   padding-right: 30px;
-  margin-bottom: 0px;
-  background-color: #f5f4fa;
+  background-color: var(--no-primary-color);
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0px;
 }
 .box-team {
   justify-content: space-between;
@@ -313,8 +320,6 @@ p {
 .prof {
   font-size: 16px;
   line-height: 1.19;
-  /* identical to box height */
-
   letter-spacing: 0.03em;
   color: var(--fone-color-cotrast);
   margin-top: 10px;
@@ -323,11 +328,16 @@ p {
 .colori {
   color: var(--primary-white-color);
 }
-.color-foot {
+.box-foot {
   background-color: #2f303a;
-  width: 1600px;
-  height: 252px;
+  width: 100%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
 .address-foot {
   font-size: 14px;
   line-height: 1.14;
@@ -340,26 +350,18 @@ p {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
   text-decoration: none;
-}
-.space {
-  padding: 0;
-  margin: 0;
-  margin-left: 215px;
-  padding-top: 60px;
 }
 .contact {
   margin-top: 9px;
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
   letter-spacing: 0.03em;
   color: var(--contact-color);
 }
-/* Portfolio-box */
+
 .board-portfilio {
   width: 1170px;
   padding-left: 30px;
@@ -375,14 +377,6 @@ p {
   margin-bottom: 50px;
   text-align: center;
 }
-.card-set {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0px;
-  padding: 0px;
-  margin-top: calc(-1 * var(--card-set-margin));
-  margin-left: calc(-1 * var(--card-set-margin));
-}
 
 .item {
   width: 370px;
@@ -395,6 +389,15 @@ img {
   height: auto;
   margin-bottom: 0px;
 }
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+  margin-top: calc(-1 * var(--card-set-margin));
+  margin-left: calc(-1 * var(--card-set-margin));
+}
+
 .card-set > .item {
   flex-basis: calc(100% / 3 - var(--card-set-margin));
   margin-left: var(--card-set-margin);
@@ -404,20 +407,18 @@ img {
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-  width: 368px;
-  height: 110px;
+  width: 320px;
+  height: 70px;
   margin-top: 0px;
+  padding: 20px 24px;
 }
 .name-project {
   font-family: Roboto;
-
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--no-title-text-color);
-  padding-top: 20px;
-  margin-left: 24px;
 }
 .prof-project {
   font-family: Roboto;
@@ -426,6 +427,5 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--fone-color-cotrast);
-  margin-left: 24px;
   margin-top: 4px;
 }
