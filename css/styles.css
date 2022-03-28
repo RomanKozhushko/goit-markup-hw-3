@@ -58,9 +58,9 @@ p {
 }
 .container {
   margin: auto;
-  width: 1230px;
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .section {
   padding-top: 94px;
